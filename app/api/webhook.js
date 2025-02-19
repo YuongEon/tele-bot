@@ -14,7 +14,7 @@ export default async function handler(req, res) {
           await sendMessage(chatId, 'App is running!');
         }
       }
-
+	console.log('text': data.message);
       res.status(200).json({ message: 'OK' });
     } catch (error) {
       console.error(error);
